@@ -6,15 +6,15 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.setContent
+import androidx.activity.compose.setContent
 import androidx.compose.ui.tooling.preview.Preview
-import jetpack.compose.composebasics.ui.theme.ComposeBasicsTheme
+import jetpack.compose.composebasics.ui.theme.BasicsCodelabTheme
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeBasicsTheme {
+            BasicsCodelabTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     Greeting("Android")
@@ -32,7 +32,7 @@ fun Greeting(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    ComposeBasicsTheme {
+    BasicsCodelabTheme {
         Greeting("Android")
     }
 }
